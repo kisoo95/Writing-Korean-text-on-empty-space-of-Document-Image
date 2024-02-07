@@ -193,7 +193,7 @@ def writing_name_in_bounding_box(index_, dataframe_, directory_, what_threshold,
     
     # bounding box 설정 - cv2 puttext 기준
     bounding_box_x_start = start_x - 3 - more_checking_
-    bounding_box_x_finish = start_x + 3 + len(what_text) * round(font_size_) + more_checking_
+    bounding_box_x_finish = start_x + 3 + len(what_text_1) * round(font_size_) + more_checking_
     bounding_box_y_start = start_y - round(font_size_ + 4) - more_checking_
     bounding_box_y_finish = start_y + 5 + more_checking_
     
