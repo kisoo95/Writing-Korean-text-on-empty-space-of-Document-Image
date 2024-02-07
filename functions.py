@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[452]:
-
-
 import os
 import numpy as np
 import matplotlib.pyplot as plt
@@ -50,7 +44,7 @@ def get_font_size(what_temp_threshold, font_quantile, white_threshold, mean_medi
     if len(letter_list_y) > 0:
         letter_list_y = np.array(letter_list_y)
         letter_list_y_2 = letter_list_y[np.quantile(letter_list_y,min_letter_quantile) < letter_list_y] 
-        letter_list_y = letter_list_y_2[letter_list_y_2 < np.quantile(test__1,max_letter_quantile)]
+        letter_list_y = letter_list_y_2[letter_list_y_2 < np.quantile(letter_list_y,max_letter_quantile)]
     
     median_rate, mean_rate = mean_median_rate__
     
